@@ -1,13 +1,7 @@
-
 {
-  "name": "select-or-die",
-  "version": "0.1.8",
-  "title": "Select or Die",
-  "author": {
-    "name": "Per Vestman",
-    "email": "per@vst.mn",
-    "url": "http://vst.mn"
-  },
+  "name": "react-sod",
+  "version": "0.0.1",
+  "title": "Select or Die React Style",
   "licenses": [
     {
       "type": "MIT",
@@ -18,11 +12,8 @@
       "url": "http://www.gnu.org/copyleft/gpl.html"
     }
   ],
-  "dependencies": {
-    "jquery": ">=1.8"
-  },
-  "main": "_src/selectordie.js",
-  "description": "Yet another jQuery plugin to style/replace select elements.",
+  "main": "./dist/index",
+  "description": "Yet another React component to style/replace select elements.",
   "keywords": [
     "select",
     "input",
@@ -30,15 +21,23 @@
     "dropdown",
     "native",
     "replacement",
-    "css",
+    "react",
     "ui",
-    "javascript",
-    "jquery",
-    "vestman"
+    "javascript"
   ],
-  "docs": "http://vst.mn/selectordie",
-  "demo": "http://vst.mn/selectordie",
-  "download": "https://github.com/vestman/Select-or-Die",
-  "bugs": "https://github.com/vestman/Select-or-Die/issues",
-  "homepage": "http://vst.mn/selectordie"
+  "download": "https://github.com/cshenoy/react-sod",
+  "bugs": "https://github.com/cshenoy/react-sod/issues",
+  "repository": "https://github.com/cshenoy/react-sod",
+  "peerDependencies": {
+    "react": ">= 0.13.3"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.23",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^5.3.2",
+    "eslint": "^1.5.1",
+    "eslint-plugin-react": "^3.5.1",
+    "react": "^0.13.3"
+  }
 }
