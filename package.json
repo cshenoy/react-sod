@@ -1,6 +1,6 @@
 {
   "name": "react-sod",
-  "version": "0.0.8",
+  "version": "0.1.4",
   "title": "Select or Die React Style",
   "scripts": {
     "prepublish": "make build"
