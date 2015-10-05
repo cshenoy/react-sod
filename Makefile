@@ -30,7 +30,7 @@ test-build:
 clean:
 	@rm -rf ./dist
 
-build: test clean dist test-build
+build: clean dist
 
 dev:
 	@node ./example/server.js
