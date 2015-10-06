@@ -12,14 +12,13 @@ dist/%.js: lib/%.js
 	$(BIN)/babel $< -o $@ --stage 0
 
 lint:
-	@ $(BIN)/eslint ./lib ./example
+	@ $(BIN)/eslint ./lib
 
 test: lint
 	@echo "\nTesting source files, hang on..."
 	@NODE_ENV=test $(BIN)/mocha         \
-		--require lib/__tests__/testdom   \
-		--require lib/__tests__/babelinit \
-		./lib/__tests__/*.test.js
+		--compilers js:babel/register			\
+		--require test/setup.js
 
 test-build:
 	@echo "\nTesting build files, almost there..!"
@@ -30,7 +29,7 @@ test-build:
 clean:
 	@rm -rf ./dist
 
-build: clean dist
+build: test clean dist
 
 dev:
 	@node ./example/server.js
