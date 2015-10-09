@@ -1,6 +1,6 @@
 {
   "name": "react-sod",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "title": "Select or Die React Style",
   "scripts": {
     "prepublish": "make build",
@@ -36,5 +36,8 @@
     "jsdom": "^6.5.1",
     "mocha": "^2.3.3",
     "react": "^0.13.3"
+  },
+  "dependencies": {
+    "exenv": "^1.2.0"
   }
 }
